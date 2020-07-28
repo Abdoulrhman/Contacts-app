@@ -1,0 +1,23 @@
+.Logo{
+    width: 200px;
+    height: 50px;
+}
+
+.InputStyle{
+    width: 20rem !important;
+}
+.SmallScreenAlign{
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) {
+    .SmallScreenAlign{
+        margin: 0 auto;
+    
+    }
+    .InputStyle{
+        display: none;
+    }
+}
