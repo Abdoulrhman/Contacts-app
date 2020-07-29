@@ -1,16 +1,16 @@
 import React, { useState } from "react";
+import classes from "./SearchBar.module.css";
 
-const SearchBar = (props) => {
+const SearchBar = ({inputValue , contactFilterOnChange}) => {
   return (
       <>
 
-      <label htmlFor="search"> Search by name </label>
       <input
-        className={`form-control mr-sm-2`}
+        className={`form-control mr-sm-2 ${classes.Input}`}
         type="text"
         placeholder="Search for contact"
-        value={props.inputValue}
-        onChange={props.contactFilterOnChange}
+        value={inputValue}
+        onChange={contactFilterOnChange}
       />
  
 
