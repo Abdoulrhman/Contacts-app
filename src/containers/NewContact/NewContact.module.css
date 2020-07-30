@@ -1,0 +1,8 @@
+.mainTitle::after{
+    content: "";
+    display: block;
+    width: 3%;
+    margin: 0.2em auto 2em;
+    border-bottom: solid;
+    color:  var(--color-secondary);
+}

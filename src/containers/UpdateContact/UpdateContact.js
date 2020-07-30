@@ -1,25 +1,30 @@
-import React, { useState } from 'react';
-import classes from './UpdateContact.module.css'
-import { useDispatch } from 'react-redux';
-import NewFormComponent from '../../components/NewFormComponent/NewFormComponent';
-import Header from '../../components/Header/Header';
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import Header from "../../components/Header/Header";
+import { motion } from "framer-motion";
+import classes from "./UpdateContact.module.css";
 
+import NewFormComponent from "../../components/NewFormComponent/NewFormComponent";
 
-const NewContact = () => {
-  const dispatch = useDispatch();
- 
+const UpdateContact = () => {
+  const singleContact = useSelector((state) => state.singleContact);
+
   return (
-    <div className="container">
-      <Header />
-      <h3 className="text-center">Update</h3>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="container">
+        <Header />
+        <h3 className={`text-center ${classes.mainTitle}`}>{`${
+          singleContact ? singleContact.name : "User"
+        }'s Profile`}</h3>
 
-      <NewFormComponent buttonTitle="Save Contact" action="UPDATE"  />
-    </div>
+        <NewFormComponent buttonTitle="Save Contact" action="UPDATE" />
+      </div>
+    </motion.div>
+  );
+};
 
-
-
-  )
-
-}
-
-export default NewContact;
+export default UpdateContact;

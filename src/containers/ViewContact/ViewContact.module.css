@@ -1,8 +1,19 @@
 .addBtn{
     background: #FFF;
     border: 1px solid;
-    padding: 5px 30px;
-    border-radius: 3px;
+    padding: 10px 25px;
+    border-radius: 2px;
     font-size: 10px;
     margin-right: 5px;
+}
+.listItem{
+    border: none;
+}
+.mainTitle::after{
+    content: "";
+    display: block;
+    width: 3%;
+    margin: 0.2em auto 2em;
+    border-bottom: solid;
+    color:  var(--color-secondary);
 }

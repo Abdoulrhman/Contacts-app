@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./SearchBar.module.css";
 
-const SearchBar = ({inputValue , contactFilterOnChange}) => {
+const SearchBar = ({ inputValue, contactFilterOnChange }) => {
   return (
-      <>
-
+    <>
       <input
         className={`form-control mr-sm-2 ${classes.Input}`}
         type="text"
@@ -12,8 +11,6 @@ const SearchBar = ({inputValue , contactFilterOnChange}) => {
         value={inputValue}
         onChange={contactFilterOnChange}
       />
- 
-
     </>
   );
 };

@@ -1,38 +1,25 @@
-.App {
+@import "./design-tokens/css-variables.scss";
+
+.Footer{
+  position: fixed;
   text-align: center;
+  width: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AddButton{
+  z-index: 999;
+  border-radius: 50%;
+  position: fixed; 
+   bottom: 10px;
+   background-color: var(--color-secondary);
+   right: 25px;
+   width: 3rem;
+   height: 3rem;
+   border: none;
+   color: #FFF;
+   font-size: 25px;
+   font-weight: 500;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
