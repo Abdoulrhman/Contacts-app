@@ -17,7 +17,7 @@ const ViewContact = () => {
 
   useEffect(() => {
     dispatch(getSinlgeContact(id));
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     if (singleContact && singleContact.id) {
