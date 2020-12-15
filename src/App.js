@@ -50,7 +50,7 @@ function App() {
       <div className="footer text-center mt-5">
         
        
-         <p>All Rights Reserved. VSSB {new Date().getFullYear()}</p>
+         <p>All Rights Reserveed. VSSB {new Date().getFullYear()}</p>
       
     
     </div>
